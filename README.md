@@ -14,6 +14,8 @@
 
 ---
 
+> **Experimental.** A working rclone backend, but no releases yet and not merged into upstream rclone. Expect breaking changes; pin a commit if you depend on it.
+
 This is an [rclone](https://rclone.org) backend for beebeeb. It lets you drive your encrypted vault with standard rclone commands — `sync`, `copy`, `ls`, `mount`, and the rest — so any server, cron job, or workstation can read and write your vault without a bespoke client.
 
 Files are encrypted on the device before they reach the API. The beebeeb servers store ciphertext and never see plaintext; this backend speaks the same HTTP API the official clients use.
